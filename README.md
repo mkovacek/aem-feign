@@ -4,7 +4,7 @@ Clean and easy web services integration in AEM.
 
 Feign makes writing java http clients easier
 
-## Example
+## How to use Feign client
 ```java
 interface GitHub {
   @RequestLine("GET /repos/{owner}/{repo}/contributors")

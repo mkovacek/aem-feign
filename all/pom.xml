@@ -85,6 +85,31 @@
                             <type>zip</type>
                             <target>/apps/aem-feign-vendor-packages/application/install</target>
                         </embedded>
+                        <embedded>
+                            <groupId>io.github.openfeign</groupId>
+                            <artifactId>feign-core</artifactId>
+                            <target>/apps/aem-feign-vendor-packages/application/install</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>io.github.openfeign</groupId>
+                            <artifactId>feign-jackson</artifactId>
+                            <target>/apps/aem-feign-vendor-packages/application/install</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>com.fasterxml.jackson.core</groupId>
+                            <artifactId>jackson-core</artifactId>
+                            <target>/apps/aem-feign-vendor-packages/application/install</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>com.fasterxml.jackson.core</groupId>
+                            <artifactId>jackson-annotations</artifactId>
+                            <target>/apps/aem-feign-vendor-packages/application/install</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>com.fasterxml.jackson.core</groupId>
+                            <artifactId>jackson-databind</artifactId>
+                            <target>/apps/aem-feign-vendor-packages/application/install</target>
+                        </embedded>
                     </embeddeds>
                 </configuration>
             </plugin>
@@ -189,6 +214,27 @@
             <groupId>com.adobe.cq</groupId>
             <artifactId>core.wcm.components.config</artifactId>
             <type>zip</type>
+        </dependency>
+        <!-- Feign -->
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-jackson</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
         </dependency>
     </dependencies>
 </project>

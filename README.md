@@ -1,6 +1,6 @@
 # AEM Feign 
 
-Clean and easy web services integration in AEM.
+Clean and easy way to integrate web services in AEM.
 
 Feign makes writing java http clients easier
 

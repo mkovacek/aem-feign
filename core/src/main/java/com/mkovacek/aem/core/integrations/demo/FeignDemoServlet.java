@@ -1,4 +1,4 @@
-package com.mkovacek.aem.core.servlets;
+package com.mkovacek.aem.core.integrations.demo;
 
 import java.io.IOException;
 

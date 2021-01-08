@@ -44,4 +44,6 @@ public class MyApp {
 ```
 
 ## Project examples
-Take a look integrations package
+Faker API and Github API integrations
+
+Take a look [integrations package](https://github.com/mkovacek/aem-feign/tree/develop/core/src/main/java/com/mkovacek/aem/core/integrations)

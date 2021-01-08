@@ -6,9 +6,11 @@ import org.osgi.service.component.annotations.Modified;
 import org.osgi.service.metatype.annotations.Designate;
 
 import feign.Feign;
+import feign.Logger;
 import feign.jackson.JacksonDecoder;
 import feign.jackson.JacksonEncoder;
 import feign.okhttp.OkHttpClient;
+import feign.slf4j.Slf4jLogger;
 
 @Component(service = ApiClient.class, immediate = true)
 @Designate(ocd = ApiClientConfig.class)
@@ -35,7 +37,13 @@ public class ApiClientImpl implements ApiClient {
     }
 
     private void initFeignBuilder() {
-        this.feignBuilder = Feign.builder().client(new OkHttpClient()).encoder(new JacksonEncoder()).decoder(new JacksonDecoder());
+        this.feignBuilder = Feign
+                              .builder()
+                              .client(new OkHttpClient())
+                              .encoder(new JacksonEncoder())
+                              .decoder(new JacksonDecoder())
+                              .logger(new Slf4jLogger())
+                              .logLevel(Logger.Level.FULL);
     }
 
 }

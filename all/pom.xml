@@ -69,6 +69,11 @@
                             <target>/apps/aem-feign-packages/application/install</target>
                         </embedded>
                         <embedded>
+                            <groupId>com.mkovacek.aem</groupId>
+                            <artifactId>aem-feign.3rd-party</artifactId>
+                            <target>/apps/aem-feign-packages/application/install</target>
+                        </embedded>
+                        <embedded>
                             <groupId>com.adobe.cq</groupId>
                             <artifactId>core.wcm.components.content</artifactId>
                             <type>zip</type>
@@ -88,6 +93,11 @@
                         <embedded>
                             <groupId>io.github.openfeign</groupId>
                             <artifactId>feign-core</artifactId>
+                            <target>/apps/aem-feign-vendor-packages/application/install</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>io.github.openfeign</groupId>
+                            <artifactId>feign-okhttp</artifactId>
                             <target>/apps/aem-feign-vendor-packages/application/install</target>
                         </embedded>
                         <embedded>
@@ -215,10 +225,19 @@
             <artifactId>core.wcm.components.config</artifactId>
             <type>zip</type>
         </dependency>
+        <dependency>
+            <groupId>com.mkovacek.aem</groupId>
+            <artifactId>aem-feign.3rd-party</artifactId>
+            <version>${project.version}</version>
+        </dependency>
         <!-- Feign -->
         <dependency>
             <groupId>io.github.openfeign</groupId>
             <artifactId>feign-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-okhttp</artifactId>
         </dependency>
         <dependency>
             <groupId>io.github.openfeign</groupId>

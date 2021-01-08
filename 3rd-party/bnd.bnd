@@ -1,0 +1,12 @@
+Bundle-Category: ${componentGroupName}
+-noextraheaders: true
+-snapshot: SNAPSHOT
+
+Import-Package: \
+    *;resolution:=optional
+
+-exportcontents: okhttp3
+
+-includeresource: \
+    lib/okhttp.jar=okhttp-*.jar;lib:=true,\
+    lib/okio.jar=okio-*.jar;lib:=true

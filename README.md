@@ -53,6 +53,6 @@ public class MyApp {
 ```
 
 ## Project examples
-Faker API and Github API integrations
+Faker API and Github API integrations in AEM project
 
 Take a look [integrations package](https://github.com/mkovacek/aem-feign/tree/develop/core/src/main/java/com/mkovacek/aem/core/integrations)

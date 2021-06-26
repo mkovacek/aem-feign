@@ -1,8 +1,10 @@
 # AEM Feign 
 
-Clean and easy way to integrate web services in Adobe Experience Manager (AEM)
+Looking for clean and easy integration of REST APIs in Adobe Experience Manager (AEM)? 
 
-[Simplify REST API Integrations in AEM with Feign HTTP client](https://devz.life)
+Luckily there is Feign HTTP client which simplifies REST API Integrations. 
+
+For more details check [Simplify REST API Integrations in AEM with Feign HTTP client](https://devz.life/blog/simplify-rest-api-integrations-in-aem-with-feign-http-client/)
 
 ## How to use Feign client
 ```java

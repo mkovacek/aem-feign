@@ -18,20 +18,20 @@ interface GitHub {
 
 }
 
-public static class Contributor {
+public class Contributor {
 
-  String login;
-  int contributions;
+  private String login;
+  private int contributions;
   
 }
 
-public static class Issue {
+public class Issue {
 
-  String title;
-  String body;
-  List<String> assignees;
-  int milestone;
-  List<String> labels;
+  private String title;
+  private String body;
+  private List<String> assignees;
+  private int milestone;
+  private List<String> labels;
   
 }
 

@@ -19,19 +19,24 @@ interface GitHub {
 }
 
 public static class Contributor {
+
   String login;
   int contributions;
+  
 }
 
 public static class Issue {
+
   String title;
   String body;
   List<String> assignees;
   int milestone;
   List<String> labels;
+  
 }
 
 public class MyApp {
+
   public static void main(String... args) {
     GitHub github = Feign.builder()
                          .decoder(new GsonDecoder())
@@ -43,6 +48,7 @@ public class MyApp {
       System.out.println(contributor.login + " (" + contributor.contributions + ")");
     }
   }
+  
 }
 ```
 

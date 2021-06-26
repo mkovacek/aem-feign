@@ -2,11 +2,12 @@
 
 Clean and easy way to integrate web services in Adobe Experience Manager (AEM)
 
-Feign makes writing java http clients easier
+[Simplify REST API Integrations in AEM with Feign HTTP client](https://devz.life)
 
 ## How to use Feign client
 ```java
 interface GitHub {
+
   @RequestLine("GET /repos/{owner}/{repo}/contributors")
   List<Contributor> contributors(@Param("owner") String owner, @Param("repo") String repo);
 
